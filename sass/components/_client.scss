@@ -1,0 +1,25 @@
+.clients {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 30px;
+    padding: center;
+    fill: $iconColor;
+    border: solid $iconColor 1px;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $primaryColor;
+      border-color: $primaryColor;
+    }
+  }
+}

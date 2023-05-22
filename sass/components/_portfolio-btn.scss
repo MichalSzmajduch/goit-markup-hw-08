@@ -1,0 +1,39 @@
+.portfolio-btn {
+  display: flex;
+  width: 572px;
+  margin: auto;
+  list-style-type: none;
+  gap: 8px;
+  margin-bottom: 50px;
+  padding-left: 0px;
+
+  &__list {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus,
+    :active {
+      background-color: $primaryColor;
+      cursor: pointer;
+      color: $thirdTextColor;
+      border: none;
+    }
+  }
+}

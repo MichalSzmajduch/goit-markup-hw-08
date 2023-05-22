@@ -1,0 +1,145 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: $footerBgColor;
+
+  &__contact {
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex block;
+    justify-content: center;
+  }
+  &__logo {
+    display: flex block;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: $thirdTextColor;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "raleway";
+    line-height: 1.17;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+  }
+  &__logo-color {
+    color: $primaryColor;
+  }
+  &__form {
+    display: flex;
+    height: 86px;
+  }
+}
+.adress {
+  list-style-type: none;
+  display: flex block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  &__list {
+    margin-bottom: 9px;
+  }
+  &__link {
+    font-style: normal;
+    text-decoration: none;
+    color: $thirdTextColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+  }
+}
+.footer-social {
+  display: inline-flex block;
+  justify-content: center;
+  margin-left: 70px;
+  margin-right: 78px;
+
+  &__title {
+    color: $thirdTextColor;
+    margin: 0px;
+    display: flex;
+  }
+  &__list {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  &__icon {
+    fill: $thirdTextColor;
+    background: $iconBgColor;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    display: flex;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $primaryColor;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+.newsletter {
+  color: $thirdTextColor;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: $footerBgColor;
+    display: inline-block;
+    color: $secondTextColor;
+    outline: none;
+    padding-left: 16px;
+  }
+  &__btn {
+    background-color: $primaryColor;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: $thirdTextColor;
+    fill: $thirdTextColor;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &__icon {
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,79 @@
+.portfolio {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+  margin: 0px;
+
+  &__list {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+  }
+  &__border {
+    border-bottom: 1px solid $borderColor;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+    padding-top: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $secondTextColor;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+.animation {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .animation__transition {
+    transform: translateY(0);
+  }
+
+  &__vertical {
+    display: block;
+  }
+  &__transition {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 150, 243, 0.9);
+    color: $thirdTextColor;
+    padding: 49px 45px 49px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0, 64;
+  }
+}

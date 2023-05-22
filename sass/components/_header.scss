@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  border: solid 1px $borderColor;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo {
+  box-sizing: content-box 145px 31px;
+  padding-left: 0px;
+  margin-right: 93px;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+
+  &__link {
+    text-decoration: none;
+    color: $textColor;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    font-family: "raleway";
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &:hover {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+    &:focus {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+  }
+  &__color {
+    color: $primaryColor;
+  }
+}
+.nav {
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 7px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    width: 254px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0;
+  }
+  &__list-style {
+    text-decoration: none;
+    color: $primaryColor;
+  }
+  &__links {
+    text-decoration: none;
+    color: $textColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 46px;
+    position: relative;
+
+    &:hover,
+    :focus {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+    &--after::after {
+      color: $primaryColor;
+      content: "";
+      position: absolute;
+      color: $primaryColor;
+      border-bottom: 4px solid $primaryColor;
+      border-radius: 2px;
+      margin-top: 28px;
+      margin-bottom: 0px;
+      display: block;
+      width: 53px;
+    }
+  }
+}
+
+.contact {
+  height: 16px;
+  margin: 8px 30px 7px 345px;
+  justify-content: center;
+  align-items: center;
+  &:focus-within {
+    color: $primaryColor;
+    fill: $primaryColor;
+  }
+  &__icon {
+    margin-right: 10px;
+
+    fill: $secondTextColor;
+    &:hover {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+    &:focus {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $secondTextColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    &:focus,
+    &:hover {
+      color: $primaryColor;
+      fill: $primaryColor;
+    }
+  }
+  &--margin {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

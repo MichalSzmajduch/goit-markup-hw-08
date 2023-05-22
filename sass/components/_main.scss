@@ -1,0 +1,53 @@
+.main {
+  padding-top: 0px;
+
+  &__container {
+    background-color: $mainBgColor;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  &__title {
+    width: 696px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: $thirdTextColor;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  &__button {
+    background-color: $primaryColor;
+    color: $thirdTextColor;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    border-radius: 4px;
+    border: none;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px 41px 10px 42px;
+    margin-top: 30px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primaryColor;
+      cursor: pointer;
+      color: $thirdTextColor;
+      border: none;
+    }
+  }
+}
