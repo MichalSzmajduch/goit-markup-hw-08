@@ -1,21 +1,22 @@
 .footer {
-  display: flex;
+  display: block;
   flex-direction: row;
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
-  justify-content: center;
+
   background-color: $footerBgColor;
 
   &__contact {
-    margin-right: 0px;
-    margin-left: 0px;
-    display: flex block;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   &__logo {
-    display: flex block;
-    flex-direction: row;
+    display: block;
+    flex-direction: column;
     margin-bottom: 20px;
     text-decoration: none;
     color: $thirdTextColor;
@@ -37,20 +38,21 @@
   }
   &__form {
     display: flex;
-    height: 86px;
+    justify-content: center;
   }
 }
 .adress {
   list-style-type: none;
-  display: flex block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+  margin: 0;
+  padding: 0;
 
   &__list {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &__link {
     font-style: normal;
@@ -70,10 +72,13 @@
   }
 }
 .footer-social {
-  display: inline-flex block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-left: 70px;
   margin-right: 78px;
+  margin-top: 52px;
 
   &__title {
     color: $thirdTextColor;
@@ -109,9 +114,13 @@
 }
 .newsletter {
   color: $thirdTextColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__title {
-    margin-top: 0px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
   &__input {
@@ -128,6 +137,7 @@
   &__btn {
     background-color: $primaryColor;
     border-radius: 4px;
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     border: none;
@@ -136,7 +146,7 @@
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    margin-left: 12px;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   &__icon {

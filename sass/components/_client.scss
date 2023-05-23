@@ -1,6 +1,8 @@
 .clients {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 
   &__icon {
@@ -9,6 +11,7 @@
     display: inline-flex;
     flex-direction: row;
     margin-right: 30px;
+    margin-bottom: 30px;
     padding: center;
     fill: $iconColor;
     border: solid $iconColor 1px;

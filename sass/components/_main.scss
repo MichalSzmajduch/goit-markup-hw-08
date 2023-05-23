@@ -1,30 +1,35 @@
 .main {
   padding-top: 0px;
+  width: 480px;
 
   &__container {
+    width: 480px;
+    height: 480px;
     background-color: $mainBgColor;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/main-background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: block flex;
+    display: block;
+    max-width: 100%;
+    height: auto;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 58px 128px 57px;
   }
   &__title {
-    width: 696px;
+    width: 365px;
     display: block;
     margin: 0 auto;
     text-align: center;
     color: $thirdTextColor;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
   }
   &__button {
     background-color: $primaryColor;
@@ -40,7 +45,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 41px 10px 42px;
-    margin-top: 30px;
+    margin-top: 40px;
     &:hover,
     &:focus,
     &:active {
@@ -49,5 +54,17 @@
       color: $thirdTextColor;
       border: none;
     }
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 196dpi),
+  (min-resolution: 2dppx),
+  (min-width: 480px) {
+  .main__container {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-img.jpg);
   }
 }

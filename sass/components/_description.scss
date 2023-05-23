@@ -1,7 +1,7 @@
 .description {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
   justify-content: center;
   padding-left: 0px;
@@ -10,11 +10,11 @@
   padding-bottom: 0px;
 
   &__box {
-    width: 270px;
+    max-width: 480px;
     margin: 0 auto;
   }
   &__bg {
-    padding: 25px 100px 25px 100px;
+    padding: 25px 190px 25px 190px;
     display: block;
     margin-bottom: 30px;
     background-color: $teamBgColor;
@@ -25,8 +25,9 @@
   &__title {
     font-size: 14px;
     line-height: 1.17;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    padding-left: 180px;
   }
   &__text {
     font-weight: 400;

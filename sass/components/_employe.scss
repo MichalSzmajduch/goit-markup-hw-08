@@ -1,10 +1,15 @@
 .employe {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: right;
-  margin: auto;
-  padding-left: 0px;
+  justify-content: center;
+  margin: 0 auto;
+  margin: 0 auto;
+  max-width: 480px;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: $teamBgColor;
 
   &__img {
@@ -12,11 +17,22 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $thirdTextColor;
-    margin-right: 30px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
     padding-left: 0px;
     padding-bottom: 30px;
+    margin-bottom: 30px;
+    max-width: 480px;
+    min-width: 320px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__imgg {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   &__name {
     font-size: 16px;

@@ -1,18 +1,19 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   margin: auto;
   border: solid 1px $borderColor;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
 }
 .logo {
-  box-sizing: content-box 145px 31px;
-  padding-left: 0px;
-  margin-right: 93px;
+  width: 380px;
+  height: 28px;
+
   flex-direction: row;
-  justify-content: center;
+
   display: flex;
 
   &__link {
@@ -46,6 +47,9 @@
   align-items: center;
   margin-top: 8px;
   margin-bottom: 7px;
+  display: none;
+
+  overflow: hidden;
 
   &__list {
     display: flex;

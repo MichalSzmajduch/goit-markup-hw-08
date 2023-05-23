@@ -1,5 +1,5 @@
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .section--pad {
   padding-top: 94px;
@@ -7,11 +7,13 @@
 }
 .section--bg {
   background-color: $teamBgColor;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 480px;
+  min-width: 320px;
   margin: auto;
   padding-top: 0px;
 
@@ -26,6 +28,7 @@
     line-height: 1.17;
   }
 }
+
 .bodystyle {
   font-family: "roboto", sans-serif;
   font-weight: 700;
@@ -33,4 +36,7 @@
   line-height: 1.46;
   color: $textColor;
   background-color: $thirdTextColor;
+  max-width: 480px;
+  width: 100%;
+  padding: 0 auto;
 }
