@@ -1,10 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $textColor;
+}
+
 .section {
-  padding-bottom: 60px;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
 }
-.section--pad {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .section--bg {
   background-color: $teamBgColor;
   padding-top: 60px;
@@ -14,8 +29,17 @@
 .container {
   max-width: 480px;
   min-width: 320px;
-  margin: auto;
-  padding-top: 0px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 
   &__title {
     display: flex;
@@ -27,16 +51,4 @@
     font-size: 36px;
     line-height: 1.17;
   }
-}
-
-.bodystyle {
-  font-family: "roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.46;
-  color: $textColor;
-  background-color: $thirdTextColor;
-  max-width: 480px;
-  width: 100%;
-  padding: 0 auto;
 }

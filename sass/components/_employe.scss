@@ -3,35 +3,38 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin: 0 auto;
   max-width: 480px;
-  min-width: 320px;
+  width: 100%;
+  height: auto;
   padding-left: 15px;
   padding-right: 15px;
   background-color: $teamBgColor;
-
+  @include tablet {
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
   &__img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $thirdTextColor;
-    margin-right: 0px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     max-width: 480px;
     min-width: 320px;
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
+
   &__imgg {
-    display: block;
-    max-width: 100%;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
     height: auto;
   }
   &__name {

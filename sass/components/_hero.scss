@@ -1,30 +1,20 @@
-.main {
-  padding-top: 0px;
-  width: 480px;
+.hero {
+  padding: 118px 0;
+  background-color: $mainBgColor;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  min-width: 320px;
+  width: 100%;
 
-  &__container {
-    width: 480px;
-    height: 480px;
-    background-color: $mainBgColor;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/main-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    padding: 118px 58px 128px 57px;
-  }
   &__title {
-    width: 365px;
-    display: block;
+    max-width: 355px;
     margin: 0 auto;
     text-align: center;
     color: $thirdTextColor;
@@ -35,20 +25,18 @@
     background-color: $primaryColor;
     color: $thirdTextColor;
     font-family: "Roboto";
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.875;
     border-radius: 4px;
     border: none;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 41px 10px 42px;
-    margin-top: 40px;
+    margin-top: 30px;
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       background-color: $primaryColor;
       cursor: pointer;
       color: $thirdTextColor;
@@ -58,13 +46,12 @@
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 196dpi),
-  (min-resolution: 2dppx),
-  (min-width: 480px) {
-  .main__container {
+  (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/header-img.jpg);
+      url(../images/main-background.jpg);
   }
 }

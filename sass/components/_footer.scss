@@ -1,17 +1,24 @@
 .footer {
   display: block;
   flex-direction: row;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
   margin: 0 auto;
-
   background-color: $footerBgColor;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 65px 89px;
+  }
 
   &__contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+      margin: 0 auto;
+    }
   }
 
   &__logo {
@@ -21,7 +28,7 @@
     text-decoration: none;
     color: $thirdTextColor;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     font-family: "raleway";
     line-height: 1.17;
     transition-property: color;
@@ -32,13 +39,18 @@
       color: $primaryColor;
       fill: $primaryColor;
     }
+    @include tablet {
+    }
   }
   &__logo-color {
     color: $primaryColor;
   }
   &__form {
-    display: flex;
+    display: block;
     justify-content: center;
+    @include tablet {
+      margin: 0 auto;
+    }
   }
 }
 .adress {
@@ -74,11 +86,14 @@
 .footer-social {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   margin-left: 70px;
   margin-right: 78px;
   margin-top: 52px;
+  @include tablet {
+    margin: 0 auto;
+  }
 
   &__title {
     color: $thirdTextColor;
@@ -125,11 +140,12 @@
   }
   &__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
     height: 50px;
     border-radius: 4px;
     background-color: $footerBgColor;
-    display: inline-block;
+    display: flex;
     color: $secondTextColor;
     outline: none;
     padding-left: 16px;

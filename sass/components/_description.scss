@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 30px;
   justify-content: center;
+  align-items: center;
   padding-left: 0px;
   margin-top: 94px;
   margin-bottom: 0px;
@@ -14,10 +15,11 @@
     margin: 0 auto;
   }
   &__bg {
-    padding: 25px 190px 25px 190px;
-    display: block;
+    padding: 25px 0px;
+    display: flex;
     margin-bottom: 30px;
     background-color: $teamBgColor;
+    justify-content: center;
   }
   &__icon {
     background-color: $teamBgColor;
@@ -27,7 +29,7 @@
     line-height: 1.17;
     margin-top: 30px;
     margin-bottom: 10px;
-    padding-left: 180px;
+    text-align: center;
   }
   &__text {
     font-weight: 400;
