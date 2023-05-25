@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
   @include tablet {
     flex-direction: row;
   }
@@ -14,8 +16,6 @@
     height: 92px;
     display: inline-flex;
     flex-direction: row;
-
-    margin-bottom: 30px;
     padding: center;
     fill: $iconColor;
     border: solid $iconColor 1px;
@@ -28,8 +28,5 @@
       fill: $primaryColor;
       border-color: $primaryColor;
     }
-  }
-  @include tablet {
-    gap: 30px;
   }
 }

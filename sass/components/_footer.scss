@@ -10,14 +10,26 @@
     justify-content: center;
     padding: 65px 89px;
   }
+  @include desktop {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 70px;
+  }
 
   &__contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
+
     @include tablet {
       margin: 0 auto;
+    }
+    @include desktop {
+      max-width: 246px;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -49,7 +61,12 @@
     display: block;
     justify-content: center;
     @include tablet {
+      max-width: 768px;
+      width: 100%;
       margin: 0 auto;
+    }
+    @include desktop {
+      max-width: 570px;
     }
   }
 }
@@ -93,6 +110,11 @@
   margin-top: 52px;
   @include tablet {
     margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 206px;
+    width: 100%;
+    height: auto;
   }
 
   &__title {
@@ -149,6 +171,10 @@
     color: $secondTextColor;
     outline: none;
     padding-left: 16px;
+    @include tablet {
+      max-width: 450px;
+      width: 100%;
+    }
   }
   &__btn {
     background-color: $primaryColor;

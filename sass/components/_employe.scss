@@ -9,14 +9,21 @@
   max-width: 480px;
   width: 100%;
   height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: $teamBgColor;
+
   @include tablet {
+    max-width: 768px;
+    width: 100%;
+    height: auto;
     flex-direction: row;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
   }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   &__img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,10 +32,18 @@
     padding-bottom: 30px;
     margin-bottom: 30px;
     max-width: 480px;
-    min-width: 320px;
+
     display: block;
     width: 100%;
     height: auto;
+    @include tablet {
+      max-width: 354px;
+      width: 100%;
+      height: auto;
+    }
+    @include desktop {
+      min-width: 270px;
+    }
   }
 
   &__imgg {
@@ -36,12 +51,28 @@
     max-width: 480px;
     width: 100%;
     height: auto;
+    @include tablet {
+      max-width: 354px;
+      width: 100%;
+      height: auto;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
   &__name {
     font-size: 16px;
     line-height: 1.17;
     margin-top: 30px;
     margin-bottom: 10px;
+    @include tablet {
+      max-width: 354px;
+      width: 100%;
+      height: auto;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
   &__role {
     font-weight: 400;
@@ -51,17 +82,29 @@
     margin-top: 10px;
     margin-bottom: 0px;
     padding-bottom: 30px;
+    @include tablet {
+      max-width: 354px;
+      width: 100%;
+      height: auto;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
 }
 .workers {
   display: inline-flex;
   flex-direction: row;
+
   margin-right: 10px;
   border-radius: 50%;
   fill: $iconColor;
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    max-width: 270px;
+  }
 
   &:hover {
     width: 44px;
