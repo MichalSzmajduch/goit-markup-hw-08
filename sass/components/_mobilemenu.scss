@@ -69,7 +69,7 @@
   background-color: $thirdTextColor;
   cursor: pointer;
   &:is(:hover, :focus) {
-    color: $primaryColor;
+    fill: $primaryColor;
   }
 }
 
