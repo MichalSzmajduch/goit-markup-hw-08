@@ -21,7 +21,9 @@
     color: $thirdTextColor;
     justify-content: center;
     display: flex;
-    padding: 27px 90px;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }
 @media (max-width: 1200px) {

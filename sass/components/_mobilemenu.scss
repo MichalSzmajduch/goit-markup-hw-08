@@ -36,11 +36,20 @@
   &__social {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     color: $primaryColor;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
+  }
+  &__social-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #21212133;
+  }
+  &__social-link--border {
+    border: none;
   }
   &__tel {
     color: $primaryColor;

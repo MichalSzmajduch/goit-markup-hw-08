@@ -12,7 +12,7 @@
   @include desktop {
     flex-wrap: nowrap;
     align-items: center;
-
+    min-width: 522px;
     gap: 70px;
   }
 
@@ -22,12 +22,20 @@
     flex-direction: column;
     align-items: center;
     min-width: 0;
+    max-width: 480px;
+    width: 100%;
 
     @include tablet {
       margin: 0 auto;
+      flex-direction: row;
+      min-width: 768px;
+      max-width: 1199px;
+      width: 100%;
     }
     @include desktop {
       align-items: start;
+      display: flex;
+      min-width: 522px;
     }
   }
 
@@ -61,14 +69,16 @@
   &__form {
     display: block;
     justify-content: center;
+    max-width: 450px;
+    width: 100%;
     @include tablet {
       max-width: 768px;
       width: 100%;
-      margin: 0 auto;
     }
     @include desktop {
-      max-width: 570px;
+      min-width: 570px;
       display: flex;
+      padding-bottom: 45px;
     }
   }
 }
@@ -80,9 +90,15 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+
+  @include tablet {
+    max-width: 768px;
+    width: 100%;
+  }
+
   @include desktop {
     align-items: start;
+    max-width: 246px;
   }
 
   &__list {
@@ -104,17 +120,24 @@
       fill: $primaryColor;
     }
   }
+  &__link--color {
+    color: #ffffff99;
+  }
 }
 .footer-social {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   margin-left: 70px;
   margin-right: 78px;
   margin-top: 52px;
+  max-width: 480px;
+  width: 100%;
   @include tablet {
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 5px;
+    max-width: 768px;
+    width: 100%;
   }
   @include desktop {
     max-width: 206px;
@@ -177,6 +200,7 @@
     @include desktop {
       display: flex;
       margin-top: 0;
+      margin-bottom: 35px;
     }
   }
 
@@ -222,5 +246,14 @@
   }
   &__icon {
     margin-left: 24px;
+  }
+}
+.footerxd {
+  @include desktop {
+    min-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
   }
 }
