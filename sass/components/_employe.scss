@@ -106,7 +106,7 @@
     max-width: 270px;
   }
 
-  &:hover {
+  &:is(:hover, :focus) {
     width: 44px;
     height: 44px;
     background-color: $primaryColor;

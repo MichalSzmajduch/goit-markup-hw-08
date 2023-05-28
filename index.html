@@ -366,7 +366,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footerxd">
+        <div class="footer__main">
           <div class="footer__contact">
             <div class="adress">
               <a href="./index.html" class="logo logo--margin">
@@ -425,25 +425,24 @@
               </ul>
             </div>
           </div>
-          <div class="footer__form">
-            <form class="footer__form">
-              <label class="newsletter">
-                <p class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</p>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  class="newsletter__input"
-                />
-                <button type="submit" class="newsletter__btn">
-                  Zapisz się
-                  <svg width="24" height="24" class="newsletter__icon">
-                    <use href="./images/icons.svg#icon-icon-send-1"></use>
-                  </svg>
-                </button>
-              </label>
-            </form>
-          </div>
+
+          <form class="footer__form">
+            <label class="newsletter">
+              <p class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</p>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="newsletter__input"
+              />
+              <button type="submit" class="newsletter__btn">
+                Zapisz się
+                <svg width="24" height="24" class="newsletter__icon">
+                  <use href="./images/icons.svg#icon-icon-send-1"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
@@ -471,7 +470,11 @@
         <a class="menu-container__mail">info@devstudio.com</a>
 
         <ul class="menu-container__social">
-          <li class="menu-container__social-link">Instagram</li>
+          <li
+            class="menu-container__social-link menu-container__social-link--padding"
+          >
+            Instagram
+          </li>
           <li class="menu-container__social-link">Twitter</li>
           <li class="menu-container__social-link">Facebook</li>
           <li
